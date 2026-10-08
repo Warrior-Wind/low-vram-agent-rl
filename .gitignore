@@ -218,3 +218,23 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML / Hugging Face
+huggingface/
+checkpoints/
+outputs/
+runs/
+wandb/
+
+# Local datasets / artifacts
+data/
+artifacts/
