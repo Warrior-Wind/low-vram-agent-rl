@@ -228,13 +228,70 @@ __marimo__/
 .DS_Store
 Thumbs.db
 
-# ML / Hugging Face
-huggingface/
+# ==============================
+# Agent-RL / ML / RL
+# ==============================
+
+# Model weights / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
 checkpoints/
 outputs/
 runs/
-wandb/
 
-# Local datasets / artifacts
-data/
-artifacts/
+# Hugging Face local cache
+/huggingface/
+
+# Local datasets
+/data/*
+!/data/README.md
+!/data/.gitkeep
+
+# Generated artifacts
+/artifacts/
+
+# Dataset artifacts
+*.parquet
+
+# ==============================
+# Experiment tracking / logs
+# ==============================
+
+logs/
+log/
+
+wandb/
+swanlog/
+
+mlruns/
+mlartifacts/
+mlflow.db
+
+# ==============================
+# Hydra
+# ==============================
+
+multirun/
+.hydra/
+
+# ==============================
+# Local secrets
+# ==============================
+
+.env.*
+!.env.example
+!.env.template
+
+# ==============================
+# Temporary / runtime
+# ==============================
+
+tmp/
+*.swp
+*~
+.history
+output.txt
+wget-log
